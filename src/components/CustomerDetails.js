@@ -16,9 +16,9 @@ function CustomerDetails() {
 
   const dispatch = useDispatch();
 
-  const namePattern = /^[[a-zA-Z]{6,16}$/;
+  const namePattern = /^[a-zA-Z ]{2,30}$/;
   const numberPattern = /^[0-9]{10}$/;
-  const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const emailPattern = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
 
   const nextPage = () => {
