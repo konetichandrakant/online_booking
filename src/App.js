@@ -1,25 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import { enums } from './enums';
+import OrderSection from './components/OrderSection.js';
+import CustomerDetails from './components/CustomerDetails.js';
+import Payment from './components/Payment.js';
+import { useSelector } from 'react-redux';
 
-function App() {
+export default function App() {
+  const page = useSelector(state => state.page);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        ((page === '') || (page === enums.ORDER_SECTION)) &&
+        (<OrderSection />)
+      }
+
+      {
+        page === enums.CUSTOMER_DETAILS &&
+        (<CustomerDetails />)
+      }
+
+      {
+        page === enums.PAYMENT &&
+        (<Payment />)
+      }
+
+      {
+        page === enums.PAYMENT_SUCCESSFUL &&
+        (
+          <h1>
+            SUCCESSFUL PAYMENT
+          </h1>
+        )
+      }
+
+      {
+        page === enums.PAYMENT_FAILED &&
+        (
+          <h1>
+            UNSUCCESSFUL PAYMENT
+          </h1>
+        )
+      }
     </div>
   );
 }
-
-export default App;

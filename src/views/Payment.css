@@ -1,0 +1,32 @@
+.payment-section {
+  border: 5px solid grey;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 206, 148);
+}
+
+.payment-section-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.order-section-fields>span {
+  font-weight: 300;
+}
+
+#payment-pay-button, #payment-cancel-button{
+  border-radius: 5px;
+}
+
+#payment-pay-button{
+  background-color: rgb(81, 212, 81);
+}
+
+#payment-cancel-button{
+  background-color: rgb(246, 54, 54);
+}

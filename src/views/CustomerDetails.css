@@ -1,0 +1,41 @@
+.customer-section {
+  padding: 10px;
+  min-width: 400px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.customer-section>h3 {
+  margin: 0px;
+}
+
+.customer-section-fields {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.customer-section-validation{
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-input {
+  border-radius: 5px;
+  width: 60%;
+  max-width: 300px;
+}
+
+#name,
+#address,
+#number,
+#email {
+  color: red;
+}
