@@ -28,7 +28,7 @@ function CustomerDetails() {
     let phoneNumber = PhoneNumber.current.value;
     let email = Email.current.value;
     let address = Address.current.value;
-
+    
     if (name.length === 0) {
       setValidName('* Name Field is Empty*');
       valid = false;
@@ -41,7 +41,7 @@ function CustomerDetails() {
       setValidName('');
     }
     if (phoneNumber.length === 0) {
-      setValidName('* Number Field is Empty*');
+      setValidNumber('* Number Field is Empty *');
       valid = false;
     }
     else if (!phoneNumber.match(numberPattern)) {
