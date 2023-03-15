@@ -31,6 +31,7 @@ function CustomerDetails() {
 
     if (name.length === 0) {
       setValidName('* Name Field is Empty*');
+      valid = false;
     }
     else if (!name.match(namePattern)) {
       setValidName('** Invalid Name **');
@@ -41,6 +42,7 @@ function CustomerDetails() {
     }
     if (phoneNumber.length === 0) {
       setValidName('* Number Field is Empty*');
+      valid = false;
     }
     else if (!phoneNumber.match(numberPattern)) {
       setValidNumber('** Invalid Number **');
@@ -51,6 +53,7 @@ function CustomerDetails() {
     }
     if (email.length === 0) {
       setValidEmail('* Email field is Empty *');
+      valid = false;
     }
     else if (!email.match(emailPattern)) {
       setValidEmail('* Invalid Email *');
@@ -61,6 +64,7 @@ function CustomerDetails() {
     }
     if (address.length === 0) {
       setValidAddress('* Address Field is Empty *');
+      valid = false;
     }
     else if (address.length > 200) {
       setValidAddress('* Address Length Exceeded *');
