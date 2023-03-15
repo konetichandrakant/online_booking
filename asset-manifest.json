@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/online_booking/static/css/main.e8b8a3fe.css",
+    "main.js": "/online_booking/static/js/main.cb1f424b.js",
+    "static/js/787.2835e0af.chunk.js": "/online_booking/static/js/787.2835e0af.chunk.js",
+    "index.html": "/online_booking/index.html",
+    "main.e8b8a3fe.css.map": "/online_booking/static/css/main.e8b8a3fe.css.map",
+    "main.cb1f424b.js.map": "/online_booking/static/js/main.cb1f424b.js.map",
+    "787.2835e0af.chunk.js.map": "/online_booking/static/js/787.2835e0af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8b8a3fe.css",
+    "static/js/main.cb1f424b.js"
+  ]
+}
